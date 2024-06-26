@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 900px) {
     .app-container {
-        justify-content: center;
+        justify-content: space-around;
     }
 }
 
