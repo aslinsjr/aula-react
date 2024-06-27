@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 900px) {
     .app-container {
-        justify-content: space-around;
+        justify-content: center;
         min-height: 100vh;
     }
 }
