@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Player from './components/Player'
 import Selector from './components/Selector'
+import List from './components/List'
 
 
 import data from './data.json'
@@ -40,6 +41,7 @@ function App() {
             <Player data={data} id={id} />
             <Selector data={data} handleChange={handleChange} handleClick={handleClick} />
           </>} />
+          <Route path="/list" element={<List />}/>
         </Routes>
       </div>
     </Router>

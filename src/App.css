@@ -19,6 +19,10 @@
 }
 
 @media screen and (max-width: 900px) {
+    body {
+        background-color: black;
+    }
+    
     .app-container {
         justify-content: center;
         min-height: 100vh;
