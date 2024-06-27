@@ -1,10 +1,12 @@
 import './App.css'
 
 import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Header from './components/Header'
 import Player from './components/Player'
 import Selector from './components/Selector'
+
 
 import data from './data.json'
 
@@ -19,23 +21,28 @@ function App() {
   function handleChange(e) {
     const selectSection = document.querySelector("#select-video")
 
-    if(e.target.id === "left") {
-      selectSection.scrollLeft= -1440;
+    if (e.target.id === "left") {
+      selectSection.scrollLeft = -1440;
     }
 
-    if(e.target.id === "right") {
+    if (e.target.id === "right") {
       selectSection.scrollLeft = 1440;
     }
-    
+
   }
 
   return (
-    <div className='app-container'>
-      <Header />
-      <Player data={data} id={id} />
-      <Selector data={data} handleChange={handleChange} handleClick={handleClick}/>
-    </div>
-
+    <Router>
+      <div className='app-container'>
+        <Header />
+        <Routes>
+          <Route path="/" element={<>
+            <Player data={data} id={id} />
+            <Selector data={data} handleChange={handleChange} handleClick={handleClick} />
+          </>} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 

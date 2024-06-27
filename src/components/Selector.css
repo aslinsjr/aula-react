@@ -73,6 +73,10 @@
 }
 
 @media screen and (max-width: 900px) {
+    .select-controll {
+        padding: 0;
+    }
+    
     #select-video {
         width: 80%;
     }
