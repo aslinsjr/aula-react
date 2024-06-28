@@ -5,9 +5,8 @@ import { Link } from "react-router-dom"
 const Header = () => {
   return (
     <div className='header'>
-      <img id="logo" src="./telaflix.png" alt="" />
+      <Link to='/'><img id="logo" src="./telaflix.png" alt="" /></Link>
       <nav>
-        <Link to='/'>Home</Link>
         <Link to='/list'>Episódios</Link>
       </nav>
     </div>

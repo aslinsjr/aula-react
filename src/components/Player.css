@@ -1,5 +1,12 @@
+#loader-img {
+    width: 560px;
+    height: 315px;
+    position: absolute;
+}
+
 @media screen and (max-width: 900px) {
-    iframe {
+    iframe,
+    #loader-img {
         width: 400px;
     }
 }

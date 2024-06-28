@@ -1,8 +1,72 @@
-.episode-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.list-player {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.episode-list img {
-    width: 300px;
+.list-player button {
+    position: absolute;
+    top: 15vh;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.list-player button:hover {
+    transform: scale(1.2);
+}
+
+.episode-list {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.episode-element {
+    width: 275px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#show-episode-card {
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+}
+
+#show-episode-card img {
+    width: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .list-player {
+        display: none;
+    }
+
+    .episode-list {
+       grid-template-columns: repeat(2, 1fr);
+       
+    }
+
+    .episode-element {
+        width: 150px;
+        height: 75px;
+    }
+
+    #show-episode-card {
+        top: 0;
+        left: 0;
+    }
 }
