@@ -52,5 +52,11 @@
         "src": "https://www.youtube.com/embed/vOJiTnxgckA?si=azoQCZrXXFWHx986",
         "title": "Memórias de Um Ninja Loki",
         "image" : "https://i.ytimg.com/vi/ivhfipMuxss/hqdefault.jpg"
+    },
+    {
+        "id": 9,
+        "src": "https://www.youtube.com/embed/B8gIzR3qOT4?si=lxYYVA0WShzkpQNC",
+        "title": "Santa Claus e o Pozinho Mágico",
+        "image" : "https://i.ytimg.com/vi/B8gIzR3qOT4/maxresdefault.jpg"
     }
 ]
