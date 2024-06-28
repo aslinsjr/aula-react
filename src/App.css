@@ -19,6 +19,7 @@ a {
 @media screen and (max-width: 900px) {
     body {
         background-color: black;
+        overflow-y: scroll;
     }
 
     .app-container {
